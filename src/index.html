@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>25+5 Clock</title>
 </head>
 <body>
-    
+    <div class="app">
+        <h1 class="title">25+5 Clock</h1>
+        <div class="incdec-controls">
+            <div class="incdec-wrap">
+                <h3 class="incdec-label" id="break-label">Break Length</h3>
+                <div class="incdec-display">
+                    <div id="break-decrement"><i class="bi bi-arrow-down-circle"></i></div>
+                    <p id="break-length">5</p>
+                    <div id="break-increment"><i class="bi bi-arrow-up-circle"></i></div>
+                </div>
+            </div>
+            <div class="incdec-wrap">
+                <h3 class="incdec-label" id="session-label">Session Length</h3>
+                <div class="incdec-display">
+                    <div id="session-decrement"><i class="bi bi-arrow-down-circle"></i></div>
+                    <p id="session-length">25</p>
+                    <div id="session-increment"><i class="bi bi-arrow-up-circle"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="timer">
+            <div class="timer-display">
+                <h3 id="timer-label">Session</h3>
+                <h4 id="time-left">25:00</h4>
+            </div>
+            <div class="timer-controls">
+                <div id="start_stop"><i class="bi bi-play-fill"></i></div>
+                <div id="reset"><i class="bi bi-arrow-repeat"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
